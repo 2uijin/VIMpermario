@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "726825119371",
+    "firebase_url": "https://vimpermario.firebaseio.com",
+    "project_id": "vimpermario",
+    "storage_bucket": "vimpermario.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:726825119371:android:01eb9b23c981fce915ee8e",
+        "android_client_info": {
+          "package_name": "com.Company.ProductName"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "726825119371-1las220rvocaabpftck7pjapmh81vs4i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwr6EO8t-9VCpNk81KwFkQG6rD3taAubk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "726825119371-1las220rvocaabpftck7pjapmh81vs4i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
