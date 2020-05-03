@@ -66,8 +66,8 @@ public class Enemy_Move : MonoBehaviour
 
     public void OnDamage() {
         spriteRenderer.color = new Color(1, 1, 1, 0.4f);
-        spriteRenderer.flipY = true; //뒤집기
-        boxcollider.enabled = false;//콜라이더 지워줌
+        spriteRenderer.flipY = true; 
+        boxcollider.enabled = false;
         rigid.AddForce(Vector2.up * 5, ForceMode2D.Impulse);
         Invoke("DeActive", 3);
     }

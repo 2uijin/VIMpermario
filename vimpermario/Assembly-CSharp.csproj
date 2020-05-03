@@ -63,12 +63,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\script\Ch_Page.cs" />
     <Compile Include="Assets\script\Enemy_Move.cs" />
+    <Compile Include="Assets\script\firebase_read.cs" />
+    <Compile Include="Assets\script\Firebase_Test.cs" />
     <Compile Include="Assets\script\GameManager.cs" />
+    <Compile Include="Assets\script\No_Move_Enermy.cs" />
     <Compile Include="Assets\script\Player_Move.cs" />
     <Compile Include="Assets\testing.cs" />
     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml" />
+    <None Include="Assets\JsonDotNet\link.xml" />
     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/leeuj/mirim/itshow/VIMpermario/vimpermario/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
@@ -303,6 +308,9 @@
     </Reference>
     <Reference Include="Google.MiniJson">
       <HintPath>D:/leeuj/mirim/itshow/VIMpermario/vimpermario/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>D:/leeuj/mirim/itshow/VIMpermario/vimpermario/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Compat">
       <HintPath>D:/leeuj/mirim/itshow/VIMpermario/vimpermario/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>

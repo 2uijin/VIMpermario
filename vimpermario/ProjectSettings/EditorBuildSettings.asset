@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/startpage.unity
+    guid: c417e7cf751d1c74cabdb11fb5a7c6f0
+  - enabled: 1
+    path: Assets/Scenes/vimpermario.unity
+    guid: ec00f4dfa00978c4b8ad18f9567895bc
+  - enabled: 1
+    path: Assets/Scenes/Leaderboard.unity
+    guid: c712ca6401331224083649e843884d45
   m_configObjects: {}

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 
 public class GameManager : MonoBehaviour
@@ -21,6 +23,12 @@ public class GameManager : MonoBehaviour
         
     }
 
+    public void ReTry()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+
     // Update is called once per frame
     void Update()
     {
@@ -32,27 +40,48 @@ public class GameManager : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            HealthDown(); //체력 -1
-            collision.attachedRigidbody.velocity = Vector2.zero; //낙하속도 0으로
-            collision.transform.position = new Vector3(-27, 6, 1); //떨어졌을때 원래 자리로
             //떨어진 자리에서 돌아오는거로 바꾸기
+
+            if (health > 1) {
+                PlayerReposition();
+            }
+
+            HealthDown(); //체력 -1
+
         }
+
+
     }
 
     public void HealthDown()
     {
-        if (health > 0)
+        if (health > 1)
         {
             health--;
             HpUi[health].color = new Color(1, 1, 1, 0.4f);
         }
-        else
+        else 
         {
-            player.Ondie();
             HpUi[0].color = new Color(1, 1, 1, 0.4f);
             UIResetBtn.SetActive(true);
             UImain.SetActive(true);
             player.Ondie();
         }
     }
+
+    void PlayerReposition() {
+        player.transform.position = new Vector3(-30, 40, 1); //떨어졌을때 원래 자리로
+        player.VelocityZero();
+
+    }
+
+    private void Awake()
+    {
+       // DontDestroyOnLoad(gameObject);
+    }
+
+    public void board_page() {
+        SceneManager.LoadScene("Leaderboard");
+    }
+
 }

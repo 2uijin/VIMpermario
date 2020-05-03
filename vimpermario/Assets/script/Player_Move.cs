@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 
@@ -19,11 +20,15 @@ public class Player_Move : MonoBehaviour
     Animator animator;
     Rigidbody2D rigid2D;
     SpriteRenderer spriterenderer;
-    BoxCollider2D boxcollider;
+    CapsuleCollider2D collider2D;
 
     public GameManager gameManager;
+    public GameObject next_btn;
+    public GameObject namefiled;
+    public InputField namee;
 
-    float jumpForce=30.0f; //점프 높이
+
+    float jumpForce =30.0f; //점프 높이
     float walkForce=25.0f;
     float maxWalkSpeed = 20.0f ; //걷는속도 제한
     int key = 0;//방향
@@ -36,7 +41,7 @@ public class Player_Move : MonoBehaviour
         this.rigid2D = GetComponent<Rigidbody2D>();
         this.animator = GetComponent<Animator>();
         this.spriterenderer = GetComponent<SpriteRenderer>();
-        this.boxcollider = GetComponent<BoxCollider2D>();
+        this.collider2D = GetComponent<CapsuleCollider2D>();
     }
 
 
@@ -46,7 +51,7 @@ public class Player_Move : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.RightArrow)|| Input.GetKeyUp(KeyCode.LeftArrow)) { //손때면 멈추게
             rigid2D.velocity = new Vector2(rigid2D.velocity.normalized.x * 0.5f, rigid2D.velocity.y);
             //walkForce = Math.Abs(this.rigid2D.velocity.normalized.x * 0.0005f); <<되는데 영원히 낮아짐,,
-            //this.walkForce = walkForce * 0.0f; //어색하지만 되긴 됨
+            this.walkForce = walkForce * 0.0f; //어색하지만 되긴 됨
 
         }
         //Debug.Log(this.rigid2D.velocity.x);
@@ -111,6 +116,11 @@ public class Player_Move : MonoBehaviour
             else
             onDamaged(collision.transform.position);
         }
+
+        if (collision.gameObject.tag == "LastLine") {
+            gameManager.HealthDown();
+            transform.position =new Vector3(-25,50, -60);
+        }
     }
 
 
@@ -121,8 +131,11 @@ public class Player_Move : MonoBehaviour
         gameManager.stagePoint += 100; //포인트 추가
 
         //밟힌 몬스터 제거
-        Enemy_Move enemymove = enemy.GetComponent<Enemy_Move>();
-        enemymove.OnDamage();
+        //Enemy_Move enemymove1 = enemy.GetComponent<Enemy_Move>();
+        //enemymove1.OnDamage();//애니있는거임
+
+        No_Move_Enermy enermymove = enemy.GetComponent<No_Move_Enermy>();
+        enermymove.OnDamage();//애니 없는거임
     }
 
     void onDamaged(Vector2 targetPos) { //데미지 받음
@@ -159,7 +172,10 @@ public class Player_Move : MonoBehaviour
         }
         else if (other.gameObject.tag == "Finish")
         {
-            gameManager.NextStage();
+            //SceneManager.LoadScene("Leaderboard");
+            //SceneManager.LoadScene(0);
+            namefiled.SetActive(true);
+            next_btn.SetActive(true);
         }
     }
 
@@ -167,7 +183,11 @@ public class Player_Move : MonoBehaviour
     {
         spriterenderer.color = new Color(1, 1, 1, 0.4f);
         spriterenderer.flipY = true; //뒤집기
-        boxcollider.enabled = false;//콜라이더 지워줌
+        collider2D.enabled = false;
         rigid2D.AddForce(Vector2.up * 5, ForceMode2D.Impulse);
+    }
+
+    public void VelocityZero() {
+        rigid2D.velocity = Vector2.zero;
     }
 }
