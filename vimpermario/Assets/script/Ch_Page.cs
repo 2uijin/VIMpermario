@@ -21,7 +21,23 @@ public class Ch_Page : MonoBehaviour
         SceneManager.LoadScene("vimpermario");
     }
 
+    public void Page_vimpermario_hard() {
+        SceneManager.LoadScene("VIMpermario_hard");
+    }
+
     public void Page_startpage() {
         SceneManager.LoadScene("startpage");
+    }
+
+    public void Page_leaderboard() {
+        SceneManager.LoadScene("Leaderboard");
+    }
+
+    public void Page_leaderboard_v() {
+        SceneManager.LoadScene("Leaderboard_v");
+    }
+
+    public void quitGame() {
+        Application.Quit();
     }
 }

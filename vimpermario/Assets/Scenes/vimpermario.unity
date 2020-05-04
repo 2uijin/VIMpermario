@@ -553,7 +553,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300056, guid: 7f791d6750991a34681eb68329ea1933, type: 3}
+  m_Sprite: {fileID: 21300066, guid: 2b221d87d74bf604d9960f8d282e510e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7334,8 +7334,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -436, y: 322.2}
-  m_SizeDelta: {x: 174.24, y: 46.83}
+  m_AnchoredPosition: {x: -410.4, y: 306.7}
+  m_SizeDelta: {x: 225.5, y: 77.9}
   m_Pivot: {x: 0.4999997, y: 0.4999997}
 --- !u!114 &585997268
 MonoBehaviour:
@@ -7357,8 +7357,8 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: af6332ad721cede40be6522d85a6bd95, type: 3}
-    m_FontSize: 40
-    m_FontStyle: 2
+    m_FontSize: 57
+    m_FontStyle: 3
     m_BestFit: 0
     m_MinSize: 0
     m_MaxSize: 119
@@ -7896,7 +7896,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300056, guid: 7f791d6750991a34681eb68329ea1933, type: 3}
+  m_Sprite: {fileID: 21300066, guid: 2b221d87d74bf604d9960f8d282e510e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8101,7 +8101,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300056, guid: 7f791d6750991a34681eb68329ea1933, type: 3}
+  m_Sprite: {fileID: 21300066, guid: 2b221d87d74bf604d9960f8d282e510e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9638,7 +9638,7 @@ GameObject:
   - component: {fileID: 1851305342}
   - component: {fileID: 1851305339}
   m_Layer: 9
-  m_Name: "\uD50C\uB808\uC774\uC5B4, \uC7A5\uC560\uBB3C, \uD558\uD2B8, \uCF54\uC778_26"
+  m_Name: "\uC18C\uD654"
   m_TagString: Enermy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

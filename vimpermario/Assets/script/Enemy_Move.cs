@@ -38,7 +38,7 @@ public class Enemy_Move : MonoBehaviour
         nextMove = UnityEngine. Random.Range(-1, 2);
 
         //애니메이션
-        anim.SetInteger("WalkSpeed", nextMove);
+        //anim.SetInteger("WalkSpeed", nextMove);
         //문워크 방지
         if (nextMove != 0)
             spriteRenderer.flipX = nextMove == 1;

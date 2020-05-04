@@ -8,6 +8,8 @@ TagManager:
   - Enermy
   - Item
   - LastLine
+  - spikes
+  - att
   layers:
   - Default
   - TransparentFX

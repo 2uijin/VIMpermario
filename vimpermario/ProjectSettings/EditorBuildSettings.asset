@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Leaderboard.unity
     guid: c712ca6401331224083649e843884d45
+  - enabled: 1
+    path: Assets/Scenes/VIMpermario_hard.unity
+    guid: cac845070c948fc4faf20a09b0ed2e2d
+  - enabled: 1
+    path: Assets/Scenes/Leaderboard_v.unity
+    guid: f3477238607a7ba46afce2b5e1bb6b4d
   m_configObjects: {}

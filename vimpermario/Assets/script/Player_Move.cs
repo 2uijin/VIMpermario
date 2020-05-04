@@ -121,6 +121,15 @@ public class Player_Move : MonoBehaviour
             gameManager.HealthDown();
             transform.position =new Vector3(-25,50, -60);
         }
+
+        if (collision.gameObject.tag == "spikes"){ //팅겨냄
+            onSpikes(collision.transform.position);
+        }
+
+        if (collision.gameObject.tag == "att")//팅겨냄+공격
+        {
+            onDamaged(collision.transform.position);
+        }
     }
 
 
@@ -131,11 +140,27 @@ public class Player_Move : MonoBehaviour
         gameManager.stagePoint += 100; //포인트 추가
 
         //밟힌 몬스터 제거
-        //Enemy_Move enemymove1 = enemy.GetComponent<Enemy_Move>();
-        //enemymove1.OnDamage();//애니있는거임
+        //Enemy_Move enemymove = enemy.GetComponent<Enemy_Move>();
+        //enemymove.OnDamage();//애니있는거임
 
-        No_Move_Enermy enermymove = enemy.GetComponent<No_Move_Enermy>();
-        enermymove.OnDamage();//애니 없는거임
+        No_Move_Enermy enermyMove = enemy.GetComponent<No_Move_Enermy>();
+        enermyMove.OnDamage();
+
+    }
+
+    void onSpikes(Vector2 targetPos) {
+        gameObject.layer = 11; //레이어 바꾸기
+
+        spriterenderer.color = new Color(1, 1, 1, 0.4f); //맞았을때 투명도 설정
+
+        //튕기기
+        int dirc = transform.position.x - targetPos.x > 0 ? 1 : -1;
+        rigid2D.AddForce(new Vector2(dirc, 1) * 20, ForceMode2D.Impulse);
+
+        //애니
+        animator.SetTrigger("doDamaged");
+
+        Invoke("Offdamage", 1); //딜레이
     }
 
     void onDamaged(Vector2 targetPos) { //데미지 받음

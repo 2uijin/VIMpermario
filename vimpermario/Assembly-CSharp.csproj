@@ -66,6 +66,7 @@
     <Compile Include="Assets\script\Ch_Page.cs" />
     <Compile Include="Assets\script\Enemy_Move.cs" />
     <Compile Include="Assets\script\firebase_read.cs" />
+    <Compile Include="Assets\script\firebase_read_v.cs" />
     <Compile Include="Assets\script\Firebase_Test.cs" />
     <Compile Include="Assets\script\GameManager.cs" />
     <Compile Include="Assets\script\No_Move_Enermy.cs" />
