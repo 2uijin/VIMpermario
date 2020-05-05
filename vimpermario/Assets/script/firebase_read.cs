@@ -76,7 +76,7 @@ public class firebase_read : MonoBehaviour
 
     void Update()
     {
-        if (cnt== 1) {
+        if (cnt==1) {
             setValue();
          }
     }

@@ -18,10 +18,12 @@ public class Ch_Page : MonoBehaviour
     }
 
     public void Page_vimpermario() {
+        Time.timeScale = 1;
         SceneManager.LoadScene("vimpermario");
     }
 
     public void Page_vimpermario_hard() {
+        Time.timeScale = 1;
         SceneManager.LoadScene("VIMpermario_hard");
     }
 

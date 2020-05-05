@@ -628,6 +628,7 @@ MonoBehaviour:
   - {fileID: 1154006801}
   UIResetBtn: {fileID: 1289947459}
   UImain: {fileID: 1970822521}
+  pause: 0
 --- !u!4 &222042825
 Transform:
   m_ObjectHideFlags: 0
@@ -9126,7 +9127,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Enter text...
+  m_Text: "4\uAE00\uC790 \uC774\uC0C1 \uCD9C\uB825x"
 --- !u!222 &1558814787
 CanvasRenderer:
   m_ObjectHideFlags: 0

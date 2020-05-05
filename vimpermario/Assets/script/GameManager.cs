@@ -18,6 +18,13 @@ public class GameManager : MonoBehaviour
     public GameObject UIResetBtn;
     public GameObject UImain;
 
+    public bool pause;
+
+    private void Start()
+    {
+        pause = false;
+    }
+
     public void NextStage()
     {
         
@@ -34,6 +41,29 @@ public class GameManager : MonoBehaviour
     {
         score.text = stagePoint + "점";//점수 출력
 
+          if (Input.GetKey(KeyCode.Q))
+        {
+            Debug.Log("dd");
+            if (pause == false)
+            {
+                Time.timeScale = 0;
+                pause = true;
+                btnSetAct(true);
+                return;
+            }
+            if (pause == true) {
+                Time.timeScale = 1;
+                pause = false;
+                btnSetAct(false);
+                return;
+            }
+        }
+
+    }
+
+    private void FixedUpdate()
+    {
+      
     }
 
     public void OnTriggerEnter2D(Collider2D collision)
@@ -63,16 +93,19 @@ public class GameManager : MonoBehaviour
         else 
         {
             HpUi[0].color = new Color(1, 1, 1, 0.4f);
-            UIResetBtn.SetActive(true);
-            UImain.SetActive(true);
+            btnSetAct(true);
             player.Ondie();
         }
+    }
+
+    void btnSetAct(bool tf) {
+        UIResetBtn.SetActive(tf);
+        UImain.SetActive(tf);
     }
 
     void PlayerReposition() {
         player.transform.position = new Vector3(-30, 40, 1); //떨어졌을때 원래 자리로
         player.VelocityZero();
-
     }
 
     private void Awake()
