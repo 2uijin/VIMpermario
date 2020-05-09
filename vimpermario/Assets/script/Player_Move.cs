@@ -23,6 +23,8 @@ public class Player_Move : MonoBehaviour
     CapsuleCollider2D collider2D;
 
     public GameManager gameManager;
+    public jumpStep jumpS;
+
     public GameObject next_btn;
     public GameObject namefiled;
     public InputField namee;
@@ -73,7 +75,7 @@ public class Player_Move : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)&& !animator.GetBool("isJumping") )
         {
             this.rigid2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
-           animator.SetBool("isJumping", true);
+            animator.SetBool("isJumping", true);
         }
 
     }
@@ -130,8 +132,17 @@ public class Player_Move : MonoBehaviour
         {
             onDamaged(collision.transform.position);
         }
-    }
 
+        if (collision.gameObject.tag == "Electric")
+        {
+            onElectric(collision.transform.position);
+        }
+
+        if (collision.gameObject.tag == "jump")
+        {
+            onJump(collision.transform);
+        }
+    }
 
     void OnAttack(Transform enemy) {
         //밟았을때 반발력
@@ -146,6 +157,12 @@ public class Player_Move : MonoBehaviour
         No_Move_Enermy enermyMove = enemy.GetComponent<No_Move_Enermy>();
         enermyMove.OnDamage();
 
+    }
+
+    void onJump(Transform jup) {
+        rigid2D.AddForce(Vector2.up * 70, ForceMode2D.Impulse);
+        rigid2D.AddForce(Vector2.right *60 , ForceMode2D.Impulse);
+        GameObject.Find("jump").GetComponent<jumpStep>().aniJump();
     }
 
     void onSpikes(Vector2 targetPos) {
@@ -174,6 +191,24 @@ public class Player_Move : MonoBehaviour
 
         //애니
         animator.SetTrigger("doDamaged");
+
+        gameManager.HealthDown();
+
+        Invoke("Offdamage", 1); //딜레이
+    }
+
+    void onElectric(Vector2 targetPos)
+    { //데미지 받음
+        gameObject.layer = 11; //레이어 바꾸기
+
+        spriterenderer.color = new Color(1, 1, 1, 0.4f); //맞았을때 투명도 설정
+
+        //튕기기
+        int dirc = transform.position.x - targetPos.x > 0 ? 1 : -1;
+        rigid2D.AddForce(new Vector2(dirc, 1) * 20, ForceMode2D.Impulse);
+
+        //애니
+        animator.SetTrigger("doElectric");
 
         gameManager.HealthDown();
 

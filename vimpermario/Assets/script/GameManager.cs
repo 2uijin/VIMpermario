@@ -20,15 +20,14 @@ public class GameManager : MonoBehaviour
 
     public bool pause;
 
+    Animation anim;
+
     private void Start()
     {
-        pause = false;
+        pause = false;        
     }
 
-    public void NextStage()
-    {
-        
-    }
+
 
     public void ReTry()
     {

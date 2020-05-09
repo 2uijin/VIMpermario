@@ -10,6 +10,8 @@ TagManager:
   - LastLine
   - spikes
   - att
+  - Electric
+  - jump
   layers:
   - Default
   - TransparentFX
