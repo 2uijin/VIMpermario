@@ -17,7 +17,7 @@ public class jumpStep : MonoBehaviour
     }
 
     public void aniJump() {
-        animator.SetTrigger("jumpstep");
+        animator.SetTrigger("doJump");
         Debug.Log("dd");
 
     }
