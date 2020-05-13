@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/startpage.unity
+- path: Assets/Scenes/vimpermario.unity
   isLoaded: 1
   isActive: 1

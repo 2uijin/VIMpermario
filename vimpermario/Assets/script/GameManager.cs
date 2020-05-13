@@ -15,8 +15,10 @@ public class GameManager : MonoBehaviour
 
     public Text score;
     public Image[] HpUi;
+
     public GameObject UIResetBtn;
     public GameObject UImain;
+    public GameObject UIcon;
 
     public bool pause;
 
@@ -24,46 +26,28 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        pause = false;        
+        pause = false;
     }
-
-
-
-    public void ReTry()
-    {
-        SceneManager.LoadScene(0);
-    }
-
 
     // Update is called once per frame
     void Update()
     {
         score.text = stagePoint + "점";//점수 출력
 
-          if (Input.GetKey(KeyCode.Q))
+        if (Input.GetKey(KeyCode.Escape))
         {
-            Debug.Log("dd");
             if (pause == false)
             {
                 Time.timeScale = 0;
                 pause = true;
                 btnSetAct(true);
-                return;
             }
-            if (pause == true) {
-                Time.timeScale = 1;
-                pause = false;
-                btnSetAct(false);
-                return;
-            }
+        
         }
 
     }
 
-    private void FixedUpdate()
-    {
-      
-    }
+
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -78,8 +62,6 @@ public class GameManager : MonoBehaviour
             HealthDown(); //체력 -1
 
         }
-
-
     }
 
     public void HealthDown()
@@ -89,7 +71,7 @@ public class GameManager : MonoBehaviour
             health--;
             HpUi[health].color = new Color(1, 1, 1, 0.4f);
         }
-        else 
+        else
         {
             HpUi[0].color = new Color(1, 1, 1, 0.4f);
             btnSetAct(true);
@@ -97,9 +79,16 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void btnSetAct(bool tf) {
+    public void btnSetAct(bool tf) {
         UIResetBtn.SetActive(tf);
         UImain.SetActive(tf);
+        UIcon.SetActive(tf);
+    }
+
+    public void btncontinue(){
+        Time.timeScale = 1;
+        pause = false;
+        btnSetAct(false);
     }
 
     void PlayerReposition() {
@@ -107,10 +96,6 @@ public class GameManager : MonoBehaviour
         player.VelocityZero();
     }
 
-    private void Awake()
-    {
-       // DontDestroyOnLoad(gameObject);
-    }
 
     public void board_page() {
         SceneManager.LoadScene("Leaderboard");
