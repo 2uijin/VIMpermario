@@ -75,6 +75,7 @@ public class GameManager : MonoBehaviour
         {
             HpUi[0].color = new Color(1, 1, 1, 0.4f);
             btnSetAct(true);
+            UIcon.SetActive(false);
             player.Ondie();
         }
     }
