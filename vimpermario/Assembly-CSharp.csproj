@@ -72,6 +72,8 @@
     <Compile Include="Assets\script\jumpStep.cs" />
     <Compile Include="Assets\script\No_Move_Enermy.cs" />
     <Compile Include="Assets\script\Player_Move.cs" />
+    <Compile Include="Assets\script\Throw_book.cs" />
+    <Compile Include="Assets\script\Throw_Enemy.cs" />
     <Compile Include="Assets\testing.cs" />
     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml" />
