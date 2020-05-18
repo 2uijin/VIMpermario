@@ -8,6 +8,7 @@ public class Throw_book : MonoBehaviour
     public float speed;
     public float distance;
     public LayerMask isLayer;
+    
     void Start()
     {
         Invoke("Destroybook", 4);
