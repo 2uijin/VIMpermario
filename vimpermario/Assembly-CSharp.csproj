@@ -72,6 +72,7 @@
     <Compile Include="Assets\script\jumpStep.cs" />
     <Compile Include="Assets\script\No_Move_Enermy.cs" />
     <Compile Include="Assets\script\Player_Move.cs" />
+    <Compile Include="Assets\script\Player2_Move.cs" />
     <Compile Include="Assets\script\Throw_book.cs" />
     <Compile Include="Assets\script\Throw_Enemy.cs" />
     <Compile Include="Assets\testing.cs" />

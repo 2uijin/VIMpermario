@@ -39,6 +39,10 @@ public class Ch_Page : MonoBehaviour
         SceneManager.LoadScene("Leaderboard_v");
     }
 
+    public void Page_diffcultytselect() {
+        SceneManager.LoadScene("difficulty_select");
+    }
+
     public void quitGame() {
         Application.Quit();
     }
