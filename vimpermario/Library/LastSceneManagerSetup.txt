@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/FrontScenes/difficulty_select.unity
+- path: Assets/Scenes/gameScenes/vimpermario_nomal.unity
   isLoaded: 1
   isActive: 1

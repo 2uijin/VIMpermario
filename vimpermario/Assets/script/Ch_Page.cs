@@ -17,9 +17,9 @@ public class Ch_Page : MonoBehaviour
         
     }
 
-    public void Page_vimpermario() {
+    public void Page_vimpermario_easy() {
         Time.timeScale = 1;
-        SceneManager.LoadScene("vimpermario");
+        SceneManager.LoadScene("vimpermario_easy_1");
     }
 
     public void Page_vimpermario_hard() {
