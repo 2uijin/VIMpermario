@@ -9,18 +9,51 @@ EditorBuildSettings:
     path: Assets/Scenes/FrontScenes/startpage.unity
     guid: c417e7cf751d1c74cabdb11fb5a7c6f0
   - enabled: 1
-    path: Assets/Scenes/gameScenes/vimpermario.unity
-    guid: ec00f4dfa00978c4b8ad18f9567895bc
-  - enabled: 1
-    path: Assets/Scenes/gameScenes/Leaderboard.unity
-    guid: c712ca6401331224083649e843884d45
-  - enabled: 1
-    path: Assets/Scenes/gameScenes/VIMpermario_hard.unity
-    guid: cac845070c948fc4faf20a09b0ed2e2d
-  - enabled: 1
     path: Assets/Scenes/FrontScenes/Leaderboard_v.unity
     guid: f3477238607a7ba46afce2b5e1bb6b4d
   - enabled: 1
     path: Assets/Scenes/FrontScenes/difficulty_select.unity
     guid: 9e074527ef9ff8b4d8128b107ba9acfc
+  - enabled: 1
+    path: Assets/Scenes/FrontScenes/difficulty_select_2player.unity
+    guid: c113404a0f67025489b34aa31dc6cc57
+  - enabled: 1
+    path: Assets/Scenes/vimpermario.unity
+    guid: ec00f4dfa00978c4b8ad18f9567895bc
+  - enabled: 1
+    path: Assets/Scenes/gameScenes/game/vimpermario_easy_1.unity
+    guid: b0edcf761ac85ed4095eb4c2547bd1a0
+  - enabled: 1
+    path: Assets/Scenes/gameScenes/game/vimpermario_nomal.unity
+    guid: b5e88035f28577c4898cafb4d95fbc06
+  - enabled: 1
+    path: Assets/Scenes/gameScenes/game/VIMpermario_hard.unity
+    guid: cac845070c948fc4faf20a09b0ed2e2d
+  - enabled: 1
+    path: Assets/Scenes/gameScenes/game/vimpermario_easy_2.unity
+    guid: 301173cd9bf2f5642b8635595e6af3ee
+  - enabled: 1
+    path: Assets/Scenes/gameScenes/game/vimpermario_normal_2.unity
+    guid: 557c8c8c98824d24eb118cf7a11b4bed
+  - enabled: 1
+    path: Assets/Scenes/gameScenes/game/vimpermario_hard_2.unity
+    guid: 44e9002ed976edf41bc5c71864a8a668
+  - enabled: 1
+    path: Assets/script/Leaderboard/Leaderboard.unity
+    guid: c712ca6401331224083649e843884d45
+  - enabled: 1
+    path: Assets/script/Leaderboard/Leaderboard_easy_2.unity
+    guid: bd93631ed9f94e54d97ccf6068ffb507
+  - enabled: 1
+    path: Assets/script/Leaderboard/Leaderboard_normal.unity
+    guid: ec6bbc1b3092f7148bd0e206f430ece2
+  - enabled: 1
+    path: Assets/script/Leaderboard/Leaderboard_normal_2.unity
+    guid: 5e387c8351665434ebe49f6495f6851e
+  - enabled: 1
+    path: Assets/script/Leaderboard/Leaderboard_hard.unity
+    guid: 99abd6215d2a6974e8843b969b358364
+  - enabled: 1
+    path: Assets/script/Leaderboard/Leaderboard_hard_2.unity
+    guid: fbb7f4cddd482d742b742ec9ed8f1ef9
   m_configObjects: {}

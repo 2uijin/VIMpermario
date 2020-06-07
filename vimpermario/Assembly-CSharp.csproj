@@ -64,17 +64,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\script\Ch_Page.cs" />
-    <Compile Include="Assets\script\Enemy_Move.cs" />
-    <Compile Include="Assets\script\firebase_read.cs" />
-    <Compile Include="Assets\script\firebase_read_v.cs" />
-    <Compile Include="Assets\script\Firebase_Test.cs" />
-    <Compile Include="Assets\script\GameManager.cs" />
-    <Compile Include="Assets\script\jumpStep.cs" />
-    <Compile Include="Assets\script\No_Move_Enermy.cs" />
-    <Compile Include="Assets\script\Player_Move.cs" />
-    <Compile Include="Assets\script\Player2_Move.cs" />
-    <Compile Include="Assets\script\Throw_book.cs" />
-    <Compile Include="Assets\script\Throw_Enemy.cs" />
+    <Compile Include="Assets\script\Enermy\Enemy_Move.cs" />
+    <Compile Include="Assets\script\Enermy\No_Move_Enermy.cs" />
+    <Compile Include="Assets\script\Enermy\Throw_book.cs" />
+    <Compile Include="Assets\script\Enermy\Throw_Enemy.cs" />
+    <Compile Include="Assets\script\Falldown_lamp.cs" />
+    <Compile Include="Assets\script\firebase\Firebase_2player_read.cs" />
+    <Compile Include="Assets\script\firebase\firebase_rank3_read.cs" />
+    <Compile Include="Assets\script\firebase\firebase_read.cs" />
+    <Compile Include="Assets\script\firebase\firebase_read_v.cs" />
+    <Compile Include="Assets\script\firebase\Firebase_Test.cs" />
+    <Compile Include="Assets\script\Objects\jumpStep.cs" />
+    <Compile Include="Assets\script\Player\Copy.cs" />
+    <Compile Include="Assets\script\Player\Copy_2.cs" />
+    <Compile Include="Assets\script\Player\GameManager.cs" />
+    <Compile Include="Assets\script\Player\GameManager_2.cs" />
+    <Compile Include="Assets\script\Player\Player_Move.cs" />
+    <Compile Include="Assets\script\Player\Player2_Move.cs" />
     <Compile Include="Assets\testing.cs" />
     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml" />

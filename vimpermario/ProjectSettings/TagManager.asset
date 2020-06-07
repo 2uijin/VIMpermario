@@ -12,6 +12,8 @@ TagManager:
   - att
   - Electric
   - jump
+  - LastLine2
+  - Player2
   layers:
   - Default
   - TransparentFX
