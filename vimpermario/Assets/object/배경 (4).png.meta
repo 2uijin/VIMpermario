@@ -1,0 +1,698 @@
+fileFormatVersion: 2
+guid: ec6633e612f168d42a77123b25f2169d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: "\uBC30\uACBD (4)_0"
+    21300002: "\uBC30\uACBD (4)_1"
+    21300004: "\uBC30\uACBD (4)_2"
+    21300006: "\uBC30\uACBD (4)_3"
+    21300008: "\uBC30\uACBD (4)_4"
+    21300010: "\uBC30\uACBD (4)_5"
+    21300012: "\uBC30\uACBD (4)_6"
+    21300014: "\uBC30\uACBD (4)_7"
+    21300016: "\uBC30\uACBD (4)_8"
+    21300018: "\uBC30\uACBD (4)_9"
+    21300020: "\uBC30\uACBD (4)_10"
+    21300022: "\uBC30\uACBD (4)_11"
+    21300024: "\uBC30\uACBD (4)_12"
+    21300026: "\uBC30\uACBD (4)_13"
+    21300028: "\uBC30\uACBD (4)_14"
+    21300030: "\uBC30\uACBD (4)_15"
+    21300032: "\uBC30\uACBD (4)_16"
+    21300034: "\uBC30\uACBD (4)_17"
+    21300036: "\uBC30\uACBD (4)_18"
+    21300038: "\uBC30\uACBD (4)_19"
+    21300040: "\uBC30\uACBD (4)_20"
+    21300042: "\uBC30\uACBD (4)_21"
+    21300044: "\uBC30\uACBD (4)_22"
+    21300046: "\uBC30\uACBD (4)_23"
+    21300048: "\uBC30\uACBD (4)_24"
+    21300050: "\uBC30\uACBD (4)_25"
+    21300052: "\uBC30\uACBD (4)_26"
+    21300054: "\uBC30\uACBD (4)_27"
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 540
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10800
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b18a1e3694fb84b8d212ab857322b5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_1"
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 10800
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ef918cf7b845a4fb7e525cfc751043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_2"
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 10800
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01fd4ece98e0b41458e199af479643f0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_3"
+      rect:
+        serializedVersion: 2
+        x: 8100
+        y: 10800
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e776249f1756764cbdbbc53327d90d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_4"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9000
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd26684f0f302bb41bf907249b1e1831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_5"
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 9000
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7271b03c94ffd1499f4598b49312a36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_6"
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 9000
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e78f6397089baf4f8e143fb4b112fd8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_7"
+      rect:
+        serializedVersion: 2
+        x: 8100
+        y: 9000
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7efa042269ebb540b7fdcb9e15ebb32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_8"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7200
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a2682f07033c124c87f811666ebf025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_9"
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 7200
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2749c514134b4d1449883df1d7f064a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_10"
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 7200
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 534093b7aca04fc4f8801432ce083c8e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_11"
+      rect:
+        serializedVersion: 2
+        x: 8100
+        y: 7200
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf73f4139bc127d4db59577014af9bcb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_12"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5400
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c569995222c77043b6a33b0ce1db3bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_13"
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 5400
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606ace23dfd4b4140b5667cd6dcd9ba3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_14"
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 5400
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54177dad0230c2944b60b77adb47929d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_15"
+      rect:
+        serializedVersion: 2
+        x: 8100
+        y: 5400
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0205352d7c97b541bd15afd06e77767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_16"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3600
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e7b92b2e62a5042aa40fd13a69edcc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_17"
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 3600
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f31ae2c21d09956499d27786880442cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_18"
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 3600
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d8c8ea765c0f9a49911c73865801970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_19"
+      rect:
+        serializedVersion: 2
+        x: 8100
+        y: 3600
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785b8fc17c9c3d84899f5db099c300b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_20"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91127dac42dc86245b4e50c00aa29eb7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_21"
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 1800
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d020f4aaeb4e354887ef50aaf092ac3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_22"
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 1800
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c461ecd84e804b4887012183c29f641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_23"
+      rect:
+        serializedVersion: 2
+        x: 8100
+        y: 1800
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 738a484613ffe8446a43e5d57bc304ea
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_24"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 801a25b289c6e594886347a07d46cb8b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_25"
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 0
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e58b24b7ba0994d90863ae799a2783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_26"
+      rect:
+        serializedVersion: 2
+        x: 5400
+        y: 0
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba52b746b3245f4d8b0cc433531bfab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\uBC30\uACBD (4)_27"
+      rect:
+        serializedVersion: 2
+        x: 8100
+        y: 0
+        width: 2700
+        height: 1800
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50bc21a781ff1ad4da47f75e24359ce2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1d8f669232d608c4b8107aa268d928c7
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

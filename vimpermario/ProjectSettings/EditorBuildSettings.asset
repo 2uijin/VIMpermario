@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/FrontScenes/startpage.unity
     guid: c417e7cf751d1c74cabdb11fb5a7c6f0
   - enabled: 1
-    path: Assets/Scenes/FrontScenes/Leaderboard_v.unity
+    path: Assets/Scenes/gameScenes/Leaderboard/Leaderboard_v.unity
     guid: f3477238607a7ba46afce2b5e1bb6b4d
   - enabled: 1
     path: Assets/Scenes/FrontScenes/difficulty_select.unity
