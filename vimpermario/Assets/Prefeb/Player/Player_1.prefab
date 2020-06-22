@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1034151855156154647}
   - component: {fileID: 1034151855156154646}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Player_1
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,6 +147,8 @@ MonoBehaviour:
   Copyy: {fileID: 1034151855575877354}
   copy: {fileID: 1034151855575877356}
   CopySet: 0
+  camera_pos: {fileID: 0}
+  resphon_pos: {x: 0, y: 0, z: 0}
 --- !u!70 &1034151855156154646
 CapsuleCollider2D:
   m_ObjectHideFlags: 0

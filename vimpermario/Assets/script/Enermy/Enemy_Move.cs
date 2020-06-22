@@ -21,6 +21,8 @@ public class Enemy_Move : MonoBehaviour
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxcollider = GetComponent<BoxCollider2D>();
+        
+        gameObject.GetComponent<Throw_Paste>().enabled = false;
 
         Invoke("Think", 5);//일정시간 후에 함수 실행
     }
@@ -62,6 +64,8 @@ public class Enemy_Move : MonoBehaviour
     {
         if (collision.gameObject.tag == "Block") //점프하고 돌아오게
             Turn();
+        if (collision.gameObject.tag == "Enermy")//몬스터 끼리 충돌
+            OnDamage();
     }
 
     public void OnDamage() {

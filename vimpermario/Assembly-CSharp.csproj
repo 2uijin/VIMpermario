@@ -63,6 +63,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\GGEZ\PerfectPixelCamera\Demo\Assets\ZoomDemo.cs" />
+    <Compile Include="Assets\GGEZ\PerfectPixelCamera\Scripts\PerfectPixelCamera.cs" />
     <Compile Include="Assets\script\Ch_Page.cs" />
     <Compile Include="Assets\script\Enermy\Enemy_Move.cs" />
     <Compile Include="Assets\script\Enermy\No_Move_Enermy.cs" />
@@ -77,15 +79,18 @@
     <Compile Include="Assets\script\Objects\jumpStep.cs" />
     <Compile Include="Assets\script\Player\Copy.cs" />
     <Compile Include="Assets\script\Player\Copy_2.cs" />
+    <Compile Include="Assets\script\Player\copySet.cs" />
     <Compile Include="Assets\script\Player\GameManager.cs" />
     <Compile Include="Assets\script\Player\GameManager_2.cs" />
     <Compile Include="Assets\script\Player\Player_Move.cs" />
     <Compile Include="Assets\script\Player\Player2_Move.cs" />
+    <Compile Include="Assets\script\Player\Throw_Paste.cs" />
     <Compile Include="Assets\testing.cs" />
     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-app-unity\maven-metadata.xml" />
     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-database-unity\maven-metadata.xml" />
     <None Include="Assets\JsonDotNet\link.xml" />
     <None Include="Assets\Firebase\m2repository\com\google\firebase\firebase-auth-unity\maven-metadata.xml" />
+    <None Include="Assets\GGEZ\PerfectPixelCamera\README.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>D:/leeuj/mirim/itshow/VIMpermario/vimpermario/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

@@ -21,6 +21,7 @@ public class Player_Move : MonoBehaviour
     Rigidbody2D rigid2D;
     SpriteRenderer spriterenderer;
     CapsuleCollider2D collider2D;
+    CircleCollider2D sittingcollider;
 
 
     public GameManager gameManager;
@@ -41,7 +42,7 @@ public class Player_Move : MonoBehaviour
     float jumpForce =30.0f; //점프 높이
     float walkForce=25.0f;
     float maxWalkSpeed = 20.0f ; //걷는속도 제한
-    int key = 0;//방향
+    public int key = 0;//방향
     float speedx;
 
     // Start is called before the first frame update
@@ -51,6 +52,7 @@ public class Player_Move : MonoBehaviour
         this.animator = GetComponent<Animator>();
         this.spriterenderer = GetComponent<SpriteRenderer>();
         this.collider2D = GetComponent<CapsuleCollider2D>();
+        this.sittingcollider = GetComponent<CircleCollider2D>();
 
         CopySet = false;
     }
@@ -85,26 +87,45 @@ public class Player_Move : MonoBehaviour
             this.rigid2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             animator.SetBool("isJumping", true);
         }
-        //카피
-        if (Input.GetKeyDown(KeyCode.K)) //나중에 누르는 동안만 나오게 수정하기
+        //숙이기
+        if (Input.GetKeyDown(KeyCode.DownArrow) && !animator.GetBool("isSitting"))
         {
+            animator.SetBool("isSitting", true);
+            collider2D.enabled = false;
+            sittingcollider.enabled = true;
+        }
+        if (Input.GetKeyUp(KeyCode.DownArrow) && animator.GetBool("isSitting"))
+        {
+            animator.SetBool("isSitting", false);
+            collider2D.enabled = true;
+            sittingcollider.enabled = false;
+        }
+
+        //카피
+        if (Input.GetKeyDown(KeyCode.K)) 
+        {
+            Vector3 copyPos = copy.transform.position;
+            if (key == -1)
+            {
+                copyPos.x = -7.3f;
+            }
+
+
             if (CopySet == false)
             {
+
                 copy.SetActive(true);
                 CopySet = true;
             }
-            else {
+        }
+        if (Input.GetKeyUp(KeyCode.K)) 
+        {
+            if(CopySet == true)
+            {
                 copy.SetActive(false);
                 CopySet = false;
             }
         }
-        //붙여넣기
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            Copyy.Paste();
-
-        }
-
 
     }
 
@@ -131,6 +152,7 @@ public class Player_Move : MonoBehaviour
         {
             this.rigid2D.AddForce(transform.right * key * this.walkForce);
         }
+
 
 
     }

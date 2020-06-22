@@ -25,5 +25,5 @@ public class Throw_Enemy : MonoBehaviour
                     currenttime = cooltime;
                 }       
             currenttime -= Time.deltaTime;//현재 시간 감소(타이머임!)
-    }
-}
+}    }
+

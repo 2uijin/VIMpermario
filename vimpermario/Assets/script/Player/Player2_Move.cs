@@ -21,6 +21,7 @@ public class Player2_Move : MonoBehaviour
     Rigidbody2D rigid2D;
     SpriteRenderer spriterenderer;
     CapsuleCollider2D collider2D;
+    CircleCollider2D sittingcollider;
 
     public GameManager_2 gameManager;
     public jumpStep jumpS;
@@ -48,13 +49,14 @@ public class Player2_Move : MonoBehaviour
         this.animator = GetComponent<Animator>();
         this.spriterenderer = GetComponent<SpriteRenderer>();
         this.collider2D = GetComponent<CapsuleCollider2D>();
+        this.sittingcollider = GetComponent<CircleCollider2D>();
     }
 
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.LeftArrow))
+        if (Input.GetKeyUp(KeyCode.D) || Input.GetKeyUp(KeyCode.A))
         { //손때면 멈추게
             rigid2D.velocity = new Vector2(rigid2D.velocity.normalized.x * 0.5f, rigid2D.velocity.y);
             //walkForce = Math.Abs(this.rigid2D.velocity.normalized.x * 0.0005f); <<되는데 영원히 낮아짐,,
@@ -81,6 +83,19 @@ public class Player2_Move : MonoBehaviour
         {
             this.rigid2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             animator.SetBool("isJumping", true);
+        }
+        //숙이기
+        if (Input.GetKeyDown(KeyCode.S) && !animator.GetBool("isSitting"))
+        {
+            animator.SetBool("isSitting", true);
+            collider2D.enabled = false;
+            sittingcollider.enabled = true;
+        }
+        if (Input.GetKeyUp(KeyCode.S) && animator.GetBool("isSitting"))
+        {
+            animator.SetBool("isSitting", false);
+            collider2D.enabled = true;
+            sittingcollider.enabled = false;
         }
 
     }
